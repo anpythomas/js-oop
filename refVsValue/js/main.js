@@ -12,6 +12,8 @@ xRef.value = 34;
 // when we console: x = 34, y = 34
 
 
+
+// function passing variable type number
 let number = 10;
 
 function increment(number) {
@@ -20,5 +22,16 @@ function increment(number) {
 }
 
 increment(number);
-
 console.log(`${number} outside function`)
+
+
+// function passing variable type number
+let numberObj = {value: 10};
+
+function incrementObj(num) {
+    // numberObj.value++;
+    console.log(`${num.value} inside function`)
+}
+
+incrementObj(numberObj.value);
+// console.log(`${numberObj.value} outside function`)

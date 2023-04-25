@@ -19,4 +19,12 @@ for (let key in circle) {
 
 // Another approach with built in method will return all keys in object
 
-console.log(Object.keys(circle));
+const keys = console.log(Object.keys(circle));
+
+console.log(keys)
+
+// Search if property in object
+
+if ("radius" in circle) {
+    console.log("circle has radius")
+}

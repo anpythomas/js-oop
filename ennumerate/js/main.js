@@ -16,3 +16,7 @@ for (let key in circle) {
         console.log(key, circle[key])
     }
 }
+
+// Another approach with built in method will return all keys in object
+
+console.log(Object.keys(circle));
